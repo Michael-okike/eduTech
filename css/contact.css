@@ -49,7 +49,7 @@ a, li{
     transition: all 0.3s ease-in-out;
 }
 #top-head{
-    background: url(/img/agency-contact-top-bg.png) no-repeat;
+    background-image: url(../img/agency-contact-top-bg.png);
     background-position: center;
     background-size: cover;
     min-height: 60vh;

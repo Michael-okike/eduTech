@@ -51,7 +51,7 @@ a, li{
     background-color: #0eb582;
 }
 #slide-1{
-    background: url(https://i.postimg.cc/XJ2Xg5FR/home-slide-1.jpg) no-repeat;
+    background-image: url(../img/home-slide-1.jpg);
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -63,14 +63,14 @@ a, li{
     height: 100%;
 }
 #slide-2{
-    background: url(https://i.postimg.cc/SsQJ8dXL/home-slide-2.jpg) no-repeat;
+    background-image: url(../img/home-slide-2.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
     min-height: 100vh;
 }
 #slide-3{
-    background: url(https://i.postimg.cc/4ymy23Qm/home-slide-3.jpg) no-repeat;
+    background-image: url(../img/home-slide-3.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -78,7 +78,7 @@ a, li{
     min-height: 100vh;
 }
 #slide-4{
-    background: url(https://i.postimg.cc/7hd6FyKX/autonomous-vehicles-banner.jpg) no-repeat;
+    background-image: url(../img/autonomous-vehicles-banner.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -163,7 +163,6 @@ a, li{
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
     transition-duration: 0.3s;
-    /* -webkit-transition-delay: 0.5s; */
 }
 #teacher .btn-outline-dark{
     border: 3px solid black;

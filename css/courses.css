@@ -47,6 +47,7 @@ a, li{
 }
 #top{
     background: url(https://i.postimg.cc/d0Y7Qwwx/coursebg.png) no-repeat;
+    background-image: url(../img/coursebg.png);
     background-position: center;
     background-size: cover;
     min-height: 60vh;
