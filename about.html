@@ -62,6 +62,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      AOS.init({});
+    </script>
   </head>
   <body>
     <section id="header" class="fixed-top">
@@ -111,7 +114,7 @@
       </nav>
     </section>
     <section id="first" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h3 class="fs-1 fw-bold text-light pt-5 text-center">
           We transform the future of Africa in tech
         </h3>
@@ -120,7 +123,7 @@
     <section id="partners">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-left">
             <p class="onli-text fs-5">
               EduTech partners with more than 200 leading universities and
               companies to bring flexible, affordable, job-relevant online
@@ -130,14 +133,14 @@
               programs.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="flip-right">
             <img src="img/partner-logos.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
     </section>
     <section id="purpose" class="py-3">
-      <div class="container-fluid">
+      <div class="container-fluid" data-aos="flip-down">
         <div class="card neu">
           <div class="card-body">
             <div class="row">
@@ -168,7 +171,7 @@
       </div>
     </section>
     <section id="Programmes" class="py-3">
-      <div class="container-fluid">
+      <div class="container-fluid" data-aos="fade-up">
         <div class="card neu">
           <div class="card-body">
             <div class="row">
@@ -249,7 +252,7 @@
       </div>
     </section>
     <section id="tutors">
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="text-center">
           <h3 class="text-primary fs-3 fw-semibold">Team</h3>
           <p class="fs-6">
@@ -399,28 +402,19 @@
                 <strong>Email:</strong> michaelokike57@gmail.com<br />
               </p>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <ul>
-                <li><a href="" class="onli-text">Home</a></li>
-                <li><a href="" class="onli-text">About us</a></li>
+                <li><a href="index.html" class="onli-text">Home</a></li>
+                <li><a href="about.html" class="onli-text">About us</a></li>
                 <li><a href="" class="onli-text">Services</a></li>
                 <li><a href="" class="onli-text">Terms of Service</a></li>
                 <li><a href="" class="onli-text">Privacy policy</a></li>
               </ul>
             </div>
-            <div class="col-lg-3 col-md-4">
-              <ul>
-                <li><a href="#" class="onli-text">Data Analysis</a></li>
-                <li><a href="#" class="onli-text">Web Development</a></li>
-                <li><a href="#" class="onli-text">Product Management</a></li>
-                <li><a href="#" class="onli-text">Digital Marketing</a></li>
-                <li><a href="#" class="onli-text">Graphic Design</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
               <h4 class="text-primary pb-2">Join Our Newsletter</h4>
               <p>Subscribe for Latest Updates</p>
-              <form action="" class="mt-4">
+              <form action="" class="mt-4 mb-2 mb-lg-0">
                 <input
                   type="email"
                   name="email"
@@ -444,7 +438,7 @@
               >. All Rights Reserved
             </div>
             <div class="credits pt-1">
-              Designed by <a href="https://bootstrapmade.com/">Michael</a>
+              Designed by <a href="https://eduTech.com/">Michael</a>
             </div>
           </div>
           <div class="social-links text-center text-md-right pt-3 pt-lg-0">
@@ -501,5 +495,9 @@
     <script type="text/javascript">
       $(".num").counterUp({ delay: 100, time: 1000 });
     </script>
+    <script>
+      AOS.init({});
+    </script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

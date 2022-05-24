@@ -4,32 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>courses</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/courses.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/11bbf1bdc4.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+  />
+  <script
+    src="https://kit.fontawesome.com/11bbf1bdc4.js"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+    integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css"
+    integrity="sha512-hoGlO+71fSG6lgS60I4bKvsFVB+bAnrVFDYlwSXoyNLppDcoupwJB7KbWq/63iACKn3gcgK9jMXd+T+YDeVrGQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js"
+    integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>AOS.init({
+  })  </script>
   </head>
   <body>
     <section id="header" class="fixed-top">
@@ -88,7 +122,7 @@
       </div>
     </section>
     <section id="python" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="text-center">
             <h3 class="onli-text fw-bold">A broad selection of courses</h3>
             <p class="onli-text pb-3">
@@ -103,9 +137,9 @@
           language. Its simple syntax and readability makes Python perfect for
           Flask, Django, data science, and machine learning.
         </p>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="card">
+        <div class="swiper python">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -121,10 +155,8 @@
                     <p>£14</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -140,10 +172,8 @@
                     <p>£10</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -159,10 +189,8 @@
                     <p>£15</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -178,10 +206,8 @@
                     <p>£8</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -197,10 +223,8 @@
                     <p>£12</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -216,20 +240,125 @@
                     <p>£10</p>
                   </div>
               </a>
-            </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Taming big data with Apaache Spark-Hands' on
+                    </h5>
+                    <p>Frank Kane</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python4.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Web Developer bootcamp with Flask & python
+                    </h5>
+                    <p>Jose Salva</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Api testing with Python 3 and Pytest 2022
+                    </h5>
+                    <p>Admas Kinfu</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python 5.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Recursion, Backtracking in Python 2022
+                    </h5>
+                    <p>Holczer Balazs</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£13</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Python Mega Course: Build 10 Real world Apps
+                    </h5>
+                    <p>Ardit Sulce</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/python.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      30 days of python: Unlock your python potential
+                    </h5>
+                    <p>Jose Ivy</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
           </div>
+          <div class="swiper-button-next fs-5"></div>
+          <div class="swiper-button-prev fs-5"></div>
         </div>
       </div>
     </section>
     <section id="javascript" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="zoom-out">
         <h5 class="fw-semibold fs-3 onli-text">Grow your software development skills with JavaScript</h5>
         <p class="onli-text">
             JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage.
         </p>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="card">
+
+        <div class="swiper javascript">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -245,10 +374,8 @@
                     <p>£5</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -264,10 +391,8 @@
                     <p>£10</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -283,10 +408,8 @@
                     <p>£20</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -302,10 +425,8 @@
                     <p>£25</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -321,10 +442,8 @@
                     <p>£12</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -340,20 +459,108 @@
                     <p>£10</p>
                   </div>
               </a>
-            </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      ES6 Javascript: The complete developer's guide 
+                    </h5>
+                    <p>Stephen Gride</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Accelerated Javascript Training
+                    </h5>
+                    <p>Maxmillian</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£14</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Javascript Intermediate level 3- JSON
+                    </h5>
+                    <p>Edwin Diaz</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Learn Modern Javascript: Getting started
+                    </h5>
+                    <p>Steven Hancock</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Essentials in Javascript ES6: Clear introduction
+                    </h5>
+                    <p>David Joseph</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
           </div>
+          <div class="swiper-button-next fs-5"></div>
+          <div class="swiper-button-prev fs-5"></div>
         </div>
       </div>
     </section>
     <section id="web-dev" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h5 class="fw-semibold fs-3 onli-text">Build websites and applications with Web Development</h5>
         <p class="onli-text">
             The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.
         </p>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="card">
+
+        <div class="swiper web-dev">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -369,10 +576,8 @@
                     <p>£14</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -388,10 +593,8 @@
                     <p>£10</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -407,10 +610,8 @@
                     <p>£15</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -426,10 +627,8 @@
                     <p>£8</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -445,10 +644,8 @@
                     <p>£12</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -464,17 +661,276 @@
                     <p>£10</p>
                   </div>
               </a>
+            </div></div>
+            <div class="swiper-slide">
+              <div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      The Complete Web developer course 2.0 
+                    </h5>
+                    <p>Irfan Dayan</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
             </div>
           </div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev prepro.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Pre-programming: Everything you need to know
+                    </h5>
+                    <p>Nick germaille</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev git.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      git a web developer job: Mastering the Modern workflow
+                    </h5>
+                    <p>Nick Jones</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Web development masterclass 2021
+                    </h5>
+                    <p>Andrei Neagoie</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Complete Junior to senior Developer roadmap
+                    </h5>
+                    <p>Andrei Neagoie</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      SASS- Complete SASS course (CSS preprocessor) 
+                    </h5>
+                    <p>Dr. Angela Yu</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+          </div>
+          <div class="swiper-button-next fs-5"></div>
+          <div class="swiper-button-prev fs-5"></div>
         </div>
       </div>
     </section>
-    <section id="view" class="py-5">
-      <div class="container">
+    <section id="java" class="py-5">
+      <div class="container" data-aos="flip-up">
+        <h5 class="fw-semibold fs-3 onli-text">Java Courses</h5>
+        <p class="onli-text">
+          Take a top-rated Java course on Udemy to gain in-demand skills. Learn how to build with Java using the latest and greatest tools and techniques. Real-world experts give you training, resources, and coding exercises to help you grow your knowledge.
+        </p>
+
+        <div class="swiper java">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Java Interview guide- 200+ interview  questions
+                    </h5>
+                    <p>Peter Ross</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£14</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Java for complete begineers 2021
+                    </h5>
+                    <p>CodeIn Academy</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                        Java programming masterclass-Java 11 & Java 17
+                    </h5>
+                    <p>Rahul Shetty</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£15</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java4.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Learn Java programming- Begineer to masterclass 
+                    </h5>
+                    <p>Abdul Bari</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£8</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                     The complete Java Development Bootcamp
+                    </h5>
+                    <p>Dheeru Mundluru</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£12</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Java-in-depth: Become a Complete Java Engineer
+                    </h5>
+                    <p>Avainsh Jain</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+            <div class="swiper-slide">
+              <div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java4.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      The Complete Java Certification Course
+                    </h5>
+                    <p>Imtiaz Ahmad</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div>
+          </div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                    <img src="img/java3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                    <h5 class="fs-6 fw-semibold onli-text">
+                      Core Java Made Easy 9covers the latest Java 17)
+                    </h5>
+                    <p>Terry Martin</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>£10</p>
+                  </div>
+              </a>
+            </div></div>
+          </div>
+          <div class="swiper-button-next fs-5"></div>
+          <div class="swiper-button-prev fs-5"></div>
+        </div>
+      </div>
+    </section>
+    <section id="view" class="py-4">
+      <div class="container" data-aos="fade-down">
         <h5 class="fw-semibold fs-3 onli-text">Students are viewing...</h5>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="card">
+        <div class="swiper view">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -490,29 +946,25 @@
                     <p>£14</p>
                   </div>
               </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-            <a href="">
-                <div class="card-body">
-                    <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
-                    <h5 class="fs-6 fw-semibold onli-text">
-                    1hr JavaScript practice: the full course
-                    </h5>
-                    <p>Avainsh Jain</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>£5</p>
-                </div>
-            </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                      <img src="img/js-1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                      1hr JavaScript practice: the full course
+                      </h5>
+                      <p>Avainsh Jain</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£5</p>
+                  </div>
+              </a>
+              </div></div>
+            <div class="swiper-slide"><div class="card">
               <a href="">
                   <div class="card-body">
                     <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
@@ -528,139 +980,210 @@
                     <p>£15</p>
                   </div>
               </a>
+            </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                      <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                      Python for data structures and analytics
+                      </h5>
+                      <p>Avainsh Jain</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£14</p>
+                  </div>
+              </a>
+              </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                      <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                      Become a certified web developer from zero
+                      </h5>
+                      <p>Avainsh Jain</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£14</p>
+                  </div>
+              </a>
+              </div></div>
+            <div class="swiper-slide"><div class="card">
+              <a href="">
+                  <div class="card-body">
+                      <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                      Advanced JavaScript and Data analytics
+                      </h5>
+                      <p>Edwin Diaz</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£25</p>
+                  </div>
+              </a>
+              </div></div>
+              <div class="swiper-slide"><div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/java4.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                        Learn Java programming- Begineer to masterclass 
+                      </h5>
+                      <p>Abdul Bari</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£8</p>
+                    </div>
+                </a>
+              </div></div>
+              <div class="swiper-slide"><div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/java2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                       The complete Java Development Bootcamp
+                      </h5>
+                      <p>Dheeru Mundluru</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£12</p>
+                    </div>
+                </a>
+              </div></div>
+              <div class="swiper-slide">
+                <div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/java4.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                        The Complete Java Certification Course
+                      </h5>
+                      <p>Imtiaz Ahmad</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£10</p>
+                    </div>
+                </a>
+              </div>
             </div>
+              <div class="swiper-slide"><div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/java3.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                        Core Java Made Easy 9covers the latest Java 17)
+                      </h5>
+                      <p>Terry Martin</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£10</p>
+                    </div>
+                </a>
+              </div></div>
+              <div class="swiper-slide"><div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/dev git.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                        git a web developer job: Mastering the Modern workflow
+                      </h5>
+                      <p>Nick Jones</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£10</p>
+                    </div>
+                </a>
+              </div></div>
+              <div class="swiper-slide"><div class="card">
+                <a href="">
+                    <div class="card-body">
+                      <img src="img/dev 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
+                      <h5 class="fs-6 fw-semibold onli-text">
+                        Web development masterclass 2021
+                      </h5>
+                      <p>Andrei Neagoie</p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p>£10</p>
+                    </div>
+                </a>
+              </div></div>
           </div>
-          <div class="col-lg-2">
-            <div class="card">
-            <a href="">
-                <div class="card-body">
-                    <img src="img/python 2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
-                    <h5 class="fs-6 fw-semibold onli-text">
-                    Python for data structures and analytics
-                    </h5>
-                    <p>Avainsh Jain</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>£14</p>
-                </div>
-            </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-            <a href="">
-                <div class="card-body">
-                    <img src="img/dev 1.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
-                    <h5 class="fs-6 fw-semibold onli-text">
-                    Become a certified web developer from zero
-                    </h5>
-                    <p>Avainsh Jain</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>£14</p>
-                </div>
-            </a>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <div class="card">
-            <a href="">
-                <div class="card-body">
-                    <img src="img/js-2.jpg" alt="" class="img-fluid" style="object-fit: cover;"/>
-                    <h5 class="fs-6 fw-semibold onli-text">
-                    Advanced JavaScript and Data analytics
-                    </h5>
-                    <p>Edwin Diaz</p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>£25</p>
-                </div>
-            </a>
-            </div>
-          </div>
+          <div class="swiper-button-next fs-5"></div>
+          <div class="swiper-button-prev fs-5"></div>
         </div>
       </div>
     </section>
     <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-4">
-                <h3 class="pb-2 fs-2 fw-normal text-primary">
-                  Edu<span class="onli-text">Tech</span>
-                </h3>
-                <p>
-                  Plot 45 Osusu Abali, <br />
-                  Okwe New Layout <br />Ngwo, Enugu<br />Nigeria<br /><br />
-                  <strong>Phone:</strong> +234 80 8130 5383<br />
-                  <strong>Email:</strong> michaelokike57@gmail.com<br />
-                </p>
-              </div>
-              <div class="col-lg-2 col-md-4">
-                <ul>
-                  <li><a href="index.html" class="onli-text">Home</a></li>
-                  <li><a href="about.html" class="onli-text">About us</a></li>
-                  <li><a href="" class="onli-text">Services</a></li>
-                  <li><a href="" class="onli-text">Terms of Service</a></li>
-                  <li><a href="" class="onli-text">Privacy policy</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-4">
-                <ul>
-                  <li><a href="#" class="onli-text">Data Analysis</a></li>
-                  <li><a href="#" class="onli-text">Web Development</a></li>
-                  <li><a href="#" class="onli-text">Product Management</a></li>
-                  <li><a href="#" class="onli-text">Digital Marketing</a></li>
-                  <li><a href="#" class="onli-text">Graphic Design</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-4">
-                <h4 class="text-primary pb-2">Join Our Newsletter</h4>
-                <p>Subscribe for Latest Updates</p>
-                <form action="" class="mt-4">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email address here"
-                  />
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    class="btn btn-primary"
-                  />
-                </form>
-              </div>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <h3 class="pb-2 fs-2 fw-normal text-primary">Edu<span class="onli-text">Tech</span></h3>
+              <p> Plot 45 Osusu Abali, <br> Okwe New Layout <br>Ngwo, Enugu<br>Nigeria<br><br> <strong>Phone:</strong> +234 80 8130 5383<br> <strong>Email:</strong> michaelokike57@gmail.com<br></p>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <li><a href="index.html" class="onli-text">Home</a></li>
+                <li><a href="about.html" class="onli-text">About us</a></li>
+                <li><a href="" class="onli-text">Services</a></li>
+                <li><a href="" class="onli-text">Terms of Service</a></li>
+                <li><a href="" class="onli-text">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <h4 class="text-primary pb-2">Join Our Newsletter</h4>
+              <p>Subscribe for Latest Updates</p>
+              <form action="" class="mt-4 mb-2 mb-lg-0">
+                <input type="email" name="email" placeholder="Enter your email address here">
+                <input type="submit" value="Subscribe" class="btn btn-primary">
+              </form>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="container py-4 d-md-flex">
-            <div class="text-center text-md-start me-auto">
-              <div class="copyright">
-                © Copyright <strong><span>EduTech</span></strong
-                >. All Rights Reserved
-              </div>
-              <div class="credits pt-1">
-                Designed by <a href="https://bootstrapmade.com/">Michael</a>
-              </div>
-            </div>
-            <div class="social-links text-center text-md-right pt-3 pt-lg-0">
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-instagram"></i></a>
-              <a href=""><i class="fa fa-skype"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container py-4 d-md-flex">
+          <div class="text-center text-md-start me-auto">
+            <div class="copyright"> © Copyright <strong><span>EduTech</span></strong>. All Rights Reserved</div>
+            <div class="credits pt-1"> Designed by <a href="https://eduTech.com/">Michael</a></div>
           </div>
+          <div class="social-links text-center text-md-right pt-3 pt-lg-0">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-skype"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
         </div>
       </footer>
       <div class="container-fluid arrow">
@@ -669,7 +1192,191 @@
           class="back-to-top d-flex align-items-center justify-content-center active"
           ><i class="bi bi-arrow-up"></i
         ></a>
-      </div>
-  
+          </div>
+
+          <script>
+            var swiper = new Swiper(".python", {
+              spaceBetween: 50,
+              freeMode: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                426: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                769: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+          <script>
+            var swiper = new Swiper(".javascript", {
+              spaceBetween: 50,
+              freeMode: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                426: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                769: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+          <script>
+            var swiper = new Swiper(".web-dev", {
+              spaceBetween: 50,
+              freeMode: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                426: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                769: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+          <script>
+            var swiper = new Swiper(".java", {
+              spaceBetween: 50,
+              freeMode: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                426: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                769: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+          <script>
+            var swiper = new Swiper(".view", {
+              spaceBetween: 50,
+              freeMode: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              breakpoints: {
+                400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                426: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                769: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+      
+          <script>AOS.init({
+          })  </script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

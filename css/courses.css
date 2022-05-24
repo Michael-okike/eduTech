@@ -35,7 +35,8 @@ a, li{
 }
 .card {
     background-color: #fbfbfe !important;
-    border: none;
+    border: 1px solid white !important;
+    height: 246px;
 }
 .neu{
     padding: 20px;
@@ -46,7 +47,6 @@ a, li{
     transition: all 0.3s ease-in-out;
 }
 #top{
-    background: url(https://i.postimg.cc/d0Y7Qwwx/coursebg.png) no-repeat;
     background-image: url(../img/coursebg.png);
     background-position: center;
     background-size: cover;

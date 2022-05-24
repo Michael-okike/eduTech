@@ -51,8 +51,7 @@ a, li{
     position: relative;
 }
 #first{
-    background: url(https://i.postimg.cc/g0HxnQ0k/section-about-bg.jpg) no-repeat;
-    background-image: url(../img/section-about-bg.jpg) no-repeat;
+    background-image: url(../img/section-about-bg.jpg);
     background-position: center;
     background-size: cover;
 }

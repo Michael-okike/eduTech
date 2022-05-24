@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educa</title>
+    <title>eduTech</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -59,6 +59,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>AOS.init({
+    })  </script>
   </head>
   <body>
     <section id="header" class="fixed-top">
@@ -164,7 +166,7 @@
         </div>
     </section>
     <section id="subjects" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <h2 class="text-center text-primary fw-semibold fs-3">Explore Our Programmes</h2>
         <h2 class="text-center onli-text fs-3 fw-bold">
           What would you like to learn
@@ -173,7 +175,7 @@
         <div class="box-container">
           <div class="row">
             <div class="col-lg-4">
-            <div class="card">
+            <div class="card" data-aos="flip-left">
               <div class="card-body">
                 <i class="fa-solid fa-laptop-code me-2 text-primary fs-4"></i>
                 <h3 class="fs-6">Technical & Engineering</h3>
@@ -183,7 +185,7 @@
             </div>
           </div>
             <div class="col-lg-4 mt-md-2 mt-2 mt-lg-0">
-            <div class="card">
+            <div class="card"data-aos="fade-down">
               <div class="card-body">
                 <i class="fa-solid fa-laptop-code me-2 text-primary fs-4"></i>
                 <h3 class="fs-6"> Non-Technical Courses</h3>
@@ -193,7 +195,7 @@
             </div>
           </div>
             <div class="col-lg-4 mt-md-2 mt-2 mt-lg-0">
-            <div class="card">
+            <div class="card" data-aos="flip-right">
               <div class="card-body">
                 <i class="fa-solid fa-laptop-code me-2 text-primary fs-4"></i>
                 <h3 class="fs-6">Mathematics & Sciences</h3>
@@ -207,7 +209,7 @@
     </section>
     <section id="popular-courses" class="py-5
     ">
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
       <div class="text-center">
         <h3 class="text-primary fs-3 fw-semibold">Top Categories</h3>
         <p class="onli-text" style="font-size: 14px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum cupiditate beatae necessitatibus voluptatum corrupti exercitationem laudantium, distinctio excepturi numquam in.</p>
@@ -277,7 +279,7 @@
       
     </section>
     <section id="code-right" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="zoom-in-up">
         <div class="text-center">
           <h3 class="fs-3 fw-semibold text-primary">Code Right Inside Your Work Space</h3>
           <p class="fs-4 onli-text fst-italic">Write and run your code using our embedded integrated development environment. Hassle-free.</p>
@@ -288,9 +290,9 @@
     <section id="teacher" class="py-5">
       <div class="container px-5 px-md-0">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-md-6 me-lg-0"><img src="./img/instructor.jpg" alt="" class="img-fluid">
+          <div class="col-lg-6 col-md-6 me-lg-0" data-aos="flip-left"><img src="./img/instructor.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-6 col-md-6" data-aos="flip-right">
             <h3 class="text-dark md-text-align-center fw-bold fs-1">Become an instructor</h3>
             <p class="fs-4">Instructors from around the world teach millions of students on EduTech. We provide the tools and skills to teach what you love.</p>
             <a href="" class="btn btn-outline-dark">Start teaching today</a>
@@ -299,7 +301,7 @@
       </div>
     </section>
     <section id="review" class="py-5">
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="text-center">
           <h3 class="text-primary fs-3 fw-semibold">Students Review</h3>
           <p>
@@ -327,7 +329,7 @@
                     <img
                       src="img/testimonials-1.jpg"
                       alt="testimony-person"
-                      class="img-fluid"
+                      class="img-fluid rounded-4"
                     />
                     <h3 class="onli-text fs-6 fw-semibold mt-1">
                       Saul Goodman
@@ -351,7 +353,7 @@
                     <img
                       src="img/testimonials-2.jpg"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid rounded-4"
                     />
                     <h3 class="onli-text fs-6 fw-semibold mt-1">
                       Sara Wilsson
@@ -375,7 +377,7 @@
                     <img
                       src="img/testimonials-3.jpg"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid rounded-4"
                     />
                     <h3 class="onli-text fs-6 fw-semibold mt-1">Jena Karlis</h3>
                   </div>
@@ -397,7 +399,7 @@
                     <img
                       src="img/testimonials-4.jpg"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid rounded-4"
                     />
                     <h3 class="onli-text fs-6 fw-semibold mt-1">
                       Matt Brandon
@@ -420,7 +422,7 @@
                     <img
                       src="img/testimonials-5.jpg"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid rounded-4"
                     />
                     <h3 class="onli-text fs-6 fw-semibold mt-1">John Larson</h3>
                   </div>
@@ -433,7 +435,7 @@
       </div>
     </section>
     <section id="client-section" class="py-5">
-      <div class="container-fluid">
+      <div class="container-fluid" data-aos="zoom-in-down">
         <div class="text-center">
           <h3 class="fw-semibold fs-4 pb-2">Trusted by Companies of all sizes</h3>
         </div>
@@ -463,11 +465,11 @@
       <div class="footer-top">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <h3 class="pb-2 fs-2 fw-normal text-primary">Edu<span class="onli-text">Tech</span></h3>
               <p> Plot 45 Osusu Abali, <br> Okwe New Layout <br>Ngwo, Enugu<br>Nigeria<br><br> <strong>Phone:</strong> +234 80 8130 5383<br> <strong>Email:</strong> michaelokike57@gmail.com<br></p>
             </div>
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-4 col-md-4">
               <ul>
                 <li><a href="index.html" class="onli-text">Home</a></li>
                 <li><a href="about.html" class="onli-text">About us</a></li>
@@ -476,19 +478,10 @@
                 <li><a href="" class="onli-text">Privacy policy</a></li>
               </ul>
             </div>
-            <div class="col-lg-3  col-md-4">
-              <ul>
-                <li><a href="#" class="onli-text">Data Analysis</a></li>
-                <li><a href="#" class="onli-text">Web Development</a></li>
-                <li><a href="#" class="onli-text">Product Management</a></li>
-                <li><a href="#" class="onli-text">Digital Marketing</a></li>
-                <li><a href="#" class="onli-text">Graphic Design</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
               <h4 class="text-primary pb-2">Join Our Newsletter</h4>
               <p>Subscribe for Latest Updates</p>
-              <form action="" class="mt-4">
+              <form action="" class="mt-4 mb-2 mb-lg-0">
                 <input type="email" name="email" placeholder="Enter your email address here">
                 <input type="submit" value="Subscribe" class="btn btn-primary">
               </form>
@@ -500,7 +493,7 @@
         <div class="container py-4 d-md-flex">
           <div class="text-center text-md-start me-auto">
             <div class="copyright"> © Copyright <strong><span>EduTech</span></strong>. All Rights Reserved</div>
-            <div class="credits pt-1"> Designed by <a href="https://bootstrapmade.com/">Michael</a></div>
+            <div class="credits pt-1"> Designed by <a href="https://eduTech.com/">Michael</a></div>
           </div>
           <div class="social-links text-center text-md-right pt-3 pt-lg-0">
             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -520,7 +513,7 @@
         spaceBetween: 50,
         centeredSlides: true,
         autoplay: {
-          delay: 5000,
+          delay: 2500,
           disableOnInteraction: false,
         },
         pagination: {
@@ -529,25 +522,6 @@
         },
         navigation: {
           nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".popular-courses", {
-        spaceBetween: 50,
-        freeMode: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-
           prevEl: ".swiper-button-prev",
         },
       });
@@ -584,5 +558,8 @@
         },
       });
     </script>
+    <script>AOS.init({
+    })  </script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
