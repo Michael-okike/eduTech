@@ -5,6 +5,7 @@
 }
 a, li {
   text-decoration: none !important;
+  list-style: none;
 }
 
 .navbar .btn {
@@ -34,7 +35,7 @@ a, li {
   height: 10px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid#0eb582;
+  border: 1px solid #0eb582;
 }
 #home .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0eb582;
